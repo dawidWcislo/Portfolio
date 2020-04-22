@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dawid Wcisło</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
+    <link rel="stylesheet"  href="css/fontello.css" />
+    <script src="js/scrollreveal-master/dist/scrollreveal.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+<script>
+	jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0);
+			
+			$('#lista1').click(function() { $.scrollTo($('#omnie'), 1000); });
+			$('#lista2').click(function() { $.scrollTo($('#containerFakt'), 1000); });
+			$('#lista3').click(function() { $.scrollTo($('#umiejetnosci'), 1000); });
+			$('#lista4').click(function() { $.scrollTo($('#inter'), 1000); });
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+            
+            $(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+		}
+		);
+</script>
+    <style>
+        .icon{
+            font-size: 5vw;
+            margin-right: 2vh;
+        }
+    </style>
+</head>
+<body>
+    <button class="hamburger">
+        <span class="hamburger__box">
+          <span class="hamburger__inner"></span>
+        </span>
+      </button>
+      <div class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a id="lista1" href="#omnie">O mnie</a></li>
+          <li class="navigation__item"><a id="lista2" href="#containerFakt">Dodatkowe Informacje</a></li>
+          <li class="navigation__item"><a id="lista3" href="#umiejetnosci">Umiejętności</a></li>
+          <li class="navigation__item"><a id="lista4" href="#inter">Kontakt</a></li>
+        </ul>
+      </div>
+        <div class="scrollup"><a id="szczalka" href="#"><span class="icon icon-up"></span></a></div>
+
+    <div id="omnie">
+        <div id="content"><p>
+           <p><b>Cześć,</b> Nazywam się Dawid Wcisło, mam 21 lat i Od początku 2020 roku systematycznie uczę się tworzenia 
+        stron internetowych oraz rzeczy związanych z hostingiem. Każdego dnia uczę się czegoś nowego, lubię poznawać nowe technologie i  sposoby, które pomagają w tworzeniu
+        stron. W wolnych chwilach lubię grać na gitarzę, gotować oraz grać w gry. Obecnie odbywam kurs na front-end developera, którego ukończę 5 marca. </p>
+        </p>
+            <div id="kontakt"> 
+                <div id="cv"> zobacz moje CV</div>
+            </div>
+        </div>
+         <img class="zdjecie" src="img/Dawid.jpg" alt="Zdjęcie">
+    </div>
+    <h2 class="napis"> Jeszcze kilka faktów o mnie </h2>
+    <div id="containerFakt">
+        <div class="column">
+            <div class="fakt" id="fakt1"><h3>Zangażowanie</h3><p>Zawsze staram się wykonać jak najlepiej powierzone mi zadania. Nie interesują mnie półśrodki. </p></div>
+            <div class="fakt" id="fakt2"><h3>Odpowiedzialność</h3><p>Jestem odpowiedzialny za swoje czyny. Jak każdy człowiek popełniam błędy ale potrafię z nich wyciągnąć wnioski.</p></div>
+        </div>
+        <div class="column">
+            <div class="fakt" id="fakt3"><h3>Samodoskonalenie</h3><p>Nie interesuje mnie kiedy ktoś za mnie naprawi problem. Muszę wiedzieć co poszło nie tak, dlaczego i jak to naprawić. Innymi słowy chcę się nauczyć łowić a nie rybe czy nawet 100 ryb. </p> </div>
+            <div class="fakt" id="fakt4"><h3>Motywacja</h3>Tak naprawdę to jej nie potrzebuję, ponieważ uwielbiam uczyć się o tworzeniu stron internetowych i na pewno tym chce się zajmować w przyszłości.</div>
+        </div>
+        <div class="column">
+            <div class="fakt" id="fakt5"><h3>Punktualność</h3>Zawsze byłem zdania, że jeżeli mam się spóźnić chociaż 5 minut to wolę być poł godziny wcześniej, nie inaczej jest z powierzonymi zadaniami, zawsze staram się je wykonać jak najlepiej i jak najszybciej. </div>
+            <div class="fakt" id="fakt6"><h3> I najważniejsze...</h3> Kocham pizzę, więc znam dużo ofert pizzerii internetowych. :) </div>
+        </div>
+    </div>
+    <h2>Moje Umiejętności</h2>
+    <div id="umiejetnosci">
+        <div class="lewa"><img src="img/w-logo-blue.svg" alt="wordpress"><p>Wordpress był pierwszym cms'em, którego poznałem podczas swojej przygody tworzenia stron internetowych. Obecnie znam kody błędów i umiem sobie z nimi poradzić. Potrafię stworzyć multisite dla wordpressa, zmienić adres domeny za pomocą replace, Wiem gdzie w plikach znajdują się miejsca na wtyczki oraz motywy. A i oczywiście umiem dodawać, modyfikować strony wpisy i tym podobvne.  </p></div>
+        <div class=" prawa"><p>Drugim cms'em, którego poznałem podczas swojej wciąż trwającej przygody był Joomla, będę szczery nie polubiliśmy się ale mimo wszystko prześwietliłem go i dzięki temu znam podstawy obsługi tym cms'em  </p><img src="img/joomla.svg" alt="joomla"></div>
+        <div class="lewa"><img src="img/linux.svg" alt="Linux"><p>Linux towarzyszy mi prawie od początku mojej nauki, najpierw były to tylko zwykłe komendy w Putty, potem jednak zmieniłem swój system operacyjny na Linuxa Mint dzięki czemu poznaje go codziennie. </p></div>
+        <div class="prawa"><p>Mam również teoretyczne pojęcie z zakresu hostingu, wiem jak one działają oraz wiem co to są domeny, znam również typy certifikatów SSL i wiem jak zabezpieczają one stronę.   </p><img src="img/ssl.png" alt=""></div>
+        <div class="lewa"><img src="img/filezille.png" alt="Filezilla"><p>Znam protokoły HTTP, DNS, SMTP, POP3, IMAP, FTP, SSH i wiem do czego służą, korzystam codziennie z większości tych protokołów korzystając z internetu, tak samo jak większość użytkowników nawet o tym nie wiedząc. Ale dodatkowo jestem zaznajomiony z Filezillą oraz Putty.</p></div>
+        <div class=" prawa"><p>HTML zacząłem poznawać kiedy zacząłem myśleć na poważnie o front-endzie. Obecnie znam najnowsze znaczniki semantyczne i żadny kod napisany w HTML nie jest mi straszny.</p><img src="img/html.svg" alt="html"></div>
+        <div class="lewa"><img src="img/css.svg" alt="CSS"><p>Równomiernie z nauką HTML uczyłem się również CSS'a, znam ich składnie umiem ustawiać witryny za pomocą flexa oraz grida oraz modyfikować kod, który napotkam</p></div>
+        <div class="prawa"><p>Po poznaniu języków opisowych to satysfakcjonującego mnie poziomu, zacząłem się uczyć Javascriptu, póki co znam jedynie podstawy jednak nie poddaję się i staram się codziennie pracować z tym językiem.</p><img src="img/js.svg" alt="Javascirpt"></div>
+        <div class="lewa"><img class="php" src="img/php.svg" alt="php"><img class="php" src="img/mqsql.svg" alt="mysql"><p>Podobnie jest również z php oraz mysql tych języków zacząłem uczyć się nie dawno i opanowałem dopiero podstawy jednak codzienie staram się uczyć o tym języku</p></div>
+        <div class="prawa"><p>Pracowałem w różnych miejscach z różnymi ludźmi, jednak zawsze pomagałem jak tylko mogłem, ponieważ byliśmy drużyną, nigdy nie tworzyłem toksycznej atmosfery bo sam jej nie lubię.</p><span class="icon icon-users"></span></div>
+        <div class="lewa"><span class="icon icon-handshake-o"></span><p>Podczas swojej kariery natrafiałem na przeróżnych klientów, od pijanych po roszczeniowych, którzy uważali, że należy im się wszystko, jednak zawsze podchodziłem do nich profesjonalnie nigdy nie dawałem się ponieść emocjom i starałem dojść do porozumienia.</p></div>
+    </div>
+    <div id="inter">
+        <h4>Dane Kontaktowe</h4>
+        <div class="container"> <p class="telefon"> Numer Telefonu:690-474-733 </p> <p class="email"><a href="mailto: dawid.wcislo98@gmail.com"> Email: dawid.wcislo98@gmail.com</a></p></div>
+        <p class="copy">&copy; 2020 Dawid Wcisło</p>
+    </div>
+    
+        
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.navigation');
+
+        const handleClick = () => {
+        hamburger.classList.toggle('hamburger--active');
+        nav.classList.toggle('navigation--active');
+}
+
+        hamburger.addEventListener('click', handleClick);
+        // 
+
+        window.sr = ScrollReveal();
+        sr.reveal('p', {
+            reset: false,
+            delay: 500,
+            distance: 0
+        });
+        sr.reveal('img', {
+            reset: false,
+            delay: 200,
+            distance: 0
+        });
+        sr.reveal('.lewa', {
+            reset: false,
+            delay: 150,
+            distance: 0
+        })
+        sr.reveal('.prawa', {
+            reset: false,
+            delay: 150,
+            distance: 0
+        })
+        // sr.reveal('#fakt1', {
+        //     reset: false,
+        //     delay: 5000,
+        //     distance: 0
+        // })
+        // sr.reveal('#fakt2', {
+        //     reset: false,
+        //     delay: 500,
+        //     distance: 0
+        // })
+        // sr.reveal('#fakt3', {
+        //     reset: false,
+        //     delay: 2000,
+        //     distance: 0
+        // })
+        // sr.reveal('#fakt4', {
+        //     reset: false,
+        //     delay: 6500,
+        //     distance: 0
+        // })
+        // sr.reveal('#fakt5', {
+        //     reset: false,
+        //     delay: 8000,
+        //     distance: 0
+        // })
+        // sr.reveal('#fakt6', {
+        //     reset: false,
+        //     delay: 3500,
+        //     distance: 0
+        // })
+
+        </script>
+</body>
+</html>
