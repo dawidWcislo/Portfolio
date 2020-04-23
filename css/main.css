@@ -111,13 +111,14 @@ color: #171717;
 #aboutMe{
     display: flex;
     margin-top: 3vh;
-    background-color:  #f7e97c;
+    background-color:  #4e54c8;
     width: 65vw;
     height: 30vw;
     padding: 2,5vw;
     -webkit-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
     -moz-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
     box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
+    color: #fff;
 }
 @media only screen and (min-width: 2500px){
     #aboutMe{
@@ -175,7 +176,7 @@ img.me{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4e14c;
+    background-color: #7e80ac;
 }
 @media only screen and (max-width: 1360px){
     #cv{
@@ -184,7 +185,7 @@ img.me{
 }
 #cv:hover{
     cursor:pointer;
-    background-color: #d0c14c ;
+    background-color: rgb(134, 38, 38) ;
 }
 h3{
     padding-top: 1ch;
@@ -260,7 +261,7 @@ h3{
     margin-top: 5vh;
 }
 #fakt6{
-    background-color: #0f5bcc;
+    background-color: #196dec;
     margin-top: 20vh;
 }
 #abilities{
@@ -282,7 +283,7 @@ h3{
 }
 .lewa{
     padding: 5vw;
-    margin-top: 5vw;
+    margin-top: .5vw;
     padding-left: 1vw;
     width: 50vw;
     height: 10vw;
@@ -290,6 +291,10 @@ h3{
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: 2;
+    color: black;
+    background-color: lightblue;
+    border-top-right-radius: 10vh;
 }
 .lewa::before{
     content:"";
@@ -299,12 +304,12 @@ h3{
     right: 100%;
     position: absolute;
     background-color: black;
-    z-index: -2;
+    z-index: 0;
     transition: transform 0.7s ease;
     opacity: 1;
     border-top-right-radius: 10vh;
 }
-.lewa::after{
+/* .lewa::after{
     content:"";
     width: 100%;
     height: 100%;
@@ -312,12 +317,12 @@ h3{
     left:0 ;
     position: absolute;
     background-color: lightblue;
-    z-index: -2;
+    z-index: 0;
     transition: transform 0.7s ease;
     opacity: 0.3;
     border-top-right-radius: 10vh;
     
-}
+} */
 .lewa:hover::before{
     transform: translateX(100%);
 }
@@ -325,7 +330,7 @@ h3{
 .prawa{
     padding: 5vw;
     padding-right: 1vw;
-    margin-top: 5vw;
+    margin-top: .5vw;
     width: 50vw;
     height: 10vw;
     display: flex;
@@ -333,6 +338,8 @@ h3{
     position: relative;
     overflow: hidden;
     align-self: flex-end;
+    border-top-left-radius: 10vh;
+    background-color: lightblue;
 }
 .prawa::after{
     content:"";
@@ -345,7 +352,7 @@ h3{
     z-index: -2;
     transition: transform 0.7s ease;
     opacity: 1;
-    border-top-left-radius: 10vh;
+    
 }
 .prawa::before{
     content:"";
@@ -437,37 +444,16 @@ a#arrow{
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
-body{
-    font-family: 'Exo', sans-serif;
-}
-
-
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-}
-
-
 .area{
-    background: #4e54c8;  
+    background: #e1e2f3;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     width: 100%;
     height:100vh;
-    
-   
+    position:fixed ;
+    z-index: -1;
+}
+.cirle{
+    border-radius: 50vh;
 }
 
 .circles{
@@ -485,7 +471,7 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: #4e54c8;
     animation: animate 25s linear infinite;
     bottom: -150px;
     
@@ -566,24 +552,28 @@ body{
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
-.area{
-    position: fixed;
-    z-index: -1;
-}
-
 @keyframes animate {
 
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+        border-radius: 25%;
     }
 
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
+        border-radius: 25%;
     }
 
+}
+#kupa{
+    width: 25%;
+    background-color: #7e80ac;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    /* border: 0.1vw solid black; */
+    border-radius: 2vh;
 }
