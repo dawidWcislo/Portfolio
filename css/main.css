@@ -108,7 +108,7 @@ margin-bottom: 20px;
 text-decoration: none;
 color: #171717;
 }
-#omnie{
+#aboutMe{
     display: flex;
     margin-top: 3vh;
     background-color:  #f7e97c;
@@ -118,6 +118,26 @@ color: #171717;
     -webkit-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
     -moz-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
     box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
+}
+@media only screen and (min-width: 2500px){
+    #aboutMe{
+        width: 45vw;
+        font-size: 1.15em;
+    }
+}
+@media only screen and (max-width:1200px){
+    #aboutMe{
+        width: 100vw;
+        height: 50vh;
+    }
+    #cv{
+        height: 25%;
+    }
+}
+@media only screen and (max-width:550px){
+    img.me{
+        display: none;
+    }
 }
 #content{
     display: flex;
@@ -129,19 +149,17 @@ color: #171717;
     font-size: 1.2em;
     display: flex;
 }
-img.zdjecie{
+img.me{
     max-height: 100%;
     max-width: 50%;
      padding:0;
      margin: 1vh;
-     transform: rotateY('90deg')
          -webkit-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
     -moz-box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);
     box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.8);  
 }
-#kontakt{
+#contact{
     min-width:100%;
-    /* height: 100%; */
     text-align: center;
     display: flex;
     align-items: flex-end;
@@ -149,7 +167,6 @@ img.zdjecie{
     width: 70%;
     height: 50%;
     padding-bottom: 2vw;
-    /* border: 1px solid black; */
 }
 #cv{
     width: 40%;
@@ -159,6 +176,11 @@ img.zdjecie{
     justify-content: center;
     align-items: center;
     background-color: #f4e14c;
+}
+@media only screen and (max-width: 1360px){
+    #cv{
+        height: 40%;
+    }
 }
 #cv:hover{
     cursor:pointer;
@@ -178,7 +200,6 @@ h2.napis{
     margin-top: 20vh;
     width: 95vw;
     height: 80vh;
-    /* border: .1vw solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,18 +227,25 @@ li{
     width: 30vw;
     text-align: center;
 }
+@media only screen and (min-width: 2500px){
+ .fakt{
+     width: 20vw;
+ }
+ #containerFakt{
+     width: 75vw;
+ }
+ 
+}
 h3{
     justify-self: flex-start;
     margin-bottom: 1.5vh;
     text-transform: uppercase;
 }
 #fakt1{
-    width:30vw;
     margin-top: 10vh;
     justify-self: flex-start;
 }
 #fakt2{
-    width: 30vw;
     height: 20vh;
     justify-self: end;
     margin-top: 20vh;
@@ -227,24 +255,30 @@ h3{
     background-color: #196dec;
     margin-top: 1vh;
 }
-#fakt4{
-    margin-top: 5vh;
-}
+#fakt4,
 #fakt5{
-    
     margin-top: 5vh;
-
 }
 #fakt6{
     background-color: #0f5bcc;
     margin-top: 20vh;
 }
-#umiejetnosci{
+#abilities{
     margin-top: 3vh;
     width: 85vw;
     display: flex; 
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+@media only screen and (min-width: 2500px){
+    #abilities{
+        width: 65vw;
+    }
+    .lewa,
+    .prawa{
+        width: 35vw;
+    }
+    
 }
 .lewa{
     padding: 5vw;
@@ -259,7 +293,7 @@ h3{
 }
 .lewa::before{
     content:"";
-    width: 50vw;
+    width: 100%;
     height: 2%;
     bottom:0;
     right: 100%;
@@ -304,7 +338,7 @@ h3{
     content:"";
     width: 100%;
     height: 2%;
-    bottom:15%;
+    bottom:0%;
     right: -100%;
     position: absolute;
     background-color: black;
@@ -335,13 +369,6 @@ img{
     max-width: 5vw;
     margin-right: 1vw;
 }
-img.php{
-    min-height: 5vw;
-    min-width:5vw;
-    max-width: 5vw;
-    max-width: 5vw;
-    margin-right: 1vw;
-}
 #inter{
     background-color: lightblue;
     width: 50vw;
@@ -354,6 +381,11 @@ img.php{
     margin-bottom: 10vh;
     border-radius: 10vh;
     padding: 5vh;
+}
+@media only screen and (min-width: 2500px){
+    #inter{
+        width: 40vw;
+    }
 }
 h4{
    align-self: center;
@@ -395,7 +427,7 @@ p.copy{
     z-index:2;
     display: none;
 }
-a#szczalka{
+a#arrow{
     display: flex;
     width: 100%;
     height: 100%;
@@ -403,3 +435,155 @@ a#szczalka{
     align-content: center;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.area{
+    position: fixed;
+    z-index: -1;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
