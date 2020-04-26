@@ -313,7 +313,7 @@ h3{
     text-transform: uppercase;
 }
 #fakt1{
-    margin-top: 10vh;
+    margin-top: 5vh;
     justify-self: flex-start;
 }
 #fakt2{
@@ -332,7 +332,7 @@ h3{
 }
 #fakt6{
     background-color: #196dec;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 @media only screen and (max-width: 900px){
     #containerFakt{
@@ -388,6 +388,11 @@ h3{
     #abilitiesHeader{
         margin-top: 50vh;
         width: 100%;
+    }
+}
+@media only screen and (max-width: 460px){
+    #abilitiesHeader{
+        margin-top: 50vh;
     }
 }
 @media only screen and (max-width: 400px){
@@ -570,6 +575,11 @@ img{
 @media only screen and (max-height: 540px){
     #abilitiesHeader{
         margin-top: 100vh;
+    }
+}
+@media only screen and (max-height: 450px){
+    #abilitiesHeader{
+        margin-top: 105vh;
     }
 }
 @media only screen and (max-width:450px) {
