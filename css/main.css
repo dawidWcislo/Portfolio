@@ -72,7 +72,7 @@ color: #eee;
 }
 @media only screen and (min-width: 2500px){
     #aboutMe{
-        width: 45vw;
+        width: 70vw;
         font-size: 1.15em;
     }
 }
@@ -171,10 +171,11 @@ img.me{
         height: 75vh;
     }
 }
-@media only screen and (max-width: 730px){
+@media only screen and (max-width: 750px){
     #aboutMe{
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin-top: 0;
+        height: 120vh;
     }
     #contact{
         flex-direction: column;
@@ -192,14 +193,20 @@ img.me{
         width:100%;
     }
     img.me{
-        height: 0;
-        width: 0;
-        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 50vh;
+        min-width: 70vw;
     }
 }
-@media only screen and (max-width: 330px){
+
+@media only screen and (max-width: 460px){
     #aboutMe{
-        height: 80vh;
+        min-height: 130vh;
+    }
+    #cv{
+        height: 20%;
+        padding-top: 2%;
     }
 }
 #cv:hover{
@@ -345,8 +352,14 @@ h3{
     #fakt6{
         margin-top: 2.5vh;
     }
+    #fakt3{
+        background-color: #0040ff;
+    }
+    #fakt4{
+        background-color: #196dec;
+    }
 }
-#kupa{
+#abilitiesHeader{
     width: 25%;
     background-color: lightblue;
     text-align: center;
@@ -367,19 +380,19 @@ h3{
     
 }
 @media only screen and (max-width: 1500px){
-    #kupa{
+    #abilitiesHeader{
         width: 50vw;
     }
 }
 @media only screen and (max-width: 900px){
-    #kupa{
+    #abilitiesHeader{
         margin-top: 50vh;
         width: 100%;
     }
 }
 @media only screen and (max-width: 400px){
-    #kupa{
-        margin-top: 58vh;
+    #abilitiesHeader{
+        margin-top: 40vh;
         font-size: .95em;
     }
 }
@@ -539,6 +552,43 @@ img{
         width: 99vw;
     }
 }
+@media only screen and (max-height: 630px){
+    #abilitiesHeader{
+        margin-top: 60vh;
+    }
+}
+@media only screen and (max-height: 630px){
+    #abilitiesHeader{
+        margin-top: 75vh;
+    }
+}
+@media only screen and (max-height: 485px){
+    #abilitiesHeader{
+        margin-top: 90vh;
+    }
+}
+@media only screen and (max-height: 540px){
+    #abilitiesHeader{
+        margin-top: 100vh;
+    }
+}
+@media only screen and (max-width:450px) {
+   
+    #aboutMe{
+        height: 100vh;
+    }
+    #cv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wp{
+        height: 33vh;
+    }
+    .protocols{
+        height: 30vh;
+    }
+}
 h4{
    align-self: center;
    font-size: 1.5em;
@@ -569,6 +619,11 @@ p.copy{
     margin-top: 7vh;
 
 }
+@media only screen and (max-width: 500px){
+    p.copy{
+        margin-top: 4vh;
+    }
+}
 .scrollup{
     width: 5vw;
     height: 5vw;
@@ -578,6 +633,7 @@ p.copy{
     right: 2vw;
     z-index:2;
     display: none;
+    z-index: 5;
 }
 a#arrow{
     display: flex;
@@ -586,7 +642,7 @@ a#arrow{
     justify-content: center;
     align-content: center;
 }
-
+/* Animation Background */
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 .area{
