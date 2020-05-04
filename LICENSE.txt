@@ -35,7 +35,4 @@ Font license info
    Author:    Crowdsourced, for Fontello project
    License:   SIL (http://scripts.sil.org/OFL)
    Homepage:  
-
-
-zamienić background na przemian na mobilne/fakty
-wyrównać zobacz moje cv 
+ 
